@@ -11,15 +11,15 @@ BUILD INSTRUCTIONS?
 Specific sources are separated by branches and each version is tagged with it's corresponding number. First, you should
 clone the project:
 
-        $ git clone https://github.com/bq/aquaris-M10-FHD.git
+        $ git clone https://github.com/bang63/android_kernel_bq_freezerfhd.git
 
 After it, choose the version you would like to build:
 
 * Aquaris M10 FHD *
 
-        $ mv aquaris-M10-FHD kernel
+        $ mv android_kernel_bq_freezerfhd
         $ cd kernel
-        $ git checkout aquaris-M10-FHD_2.x
+        $ git checkout cm-13.0
 
 At the same level of the "kernel" directory:
 
@@ -40,7 +40,7 @@ Finally, build the kernel according the next table of product names:
 
 | device                    | product                 |
 | --------------------------|-------------------------|
-| bq aquaris M10 FHD        | bq_aquaris_m10_FHD      |
+| bq aquaris M10 FHD        | freezerfhd              |
 
 
         $ make -C kernel  O=../KERNEL_OUT  ARCH=arm64 CROSS_COMPILE=../aarch64-linux-android-4.9/bin/aarch64-linux-android- {product}_defconfig
